@@ -32,6 +32,9 @@ int main() {
  //2 Lances
  //9 Pawns
  
+ //Black goes first
+ //White goes second
+ 
  /*
  L N S G K G S N L
    R           B
