@@ -20,6 +20,13 @@ void showBoard(char board[] [SIDE]) {
  return;
 }
 
+void shogi() {
+ int player1Wins = 0;
+ //Keeps track of player 1's wins
+ int player2Wins = 0;
+ //Keeps track of player 2's wins
+}
+        
 int main() {
  //9x9 board
  //Pieces moving
@@ -46,4 +53,9 @@ int main() {
    B           R
  L N S G K G S N L
  */
+ 
+ //Ask player to select a move by selecting a piece's location (ex. b7)
+ //Then ask them to select their desired move location (ex. c3)
+ //If it's a legal move, move the piece
+ //If it's not a legal move, tell the user that the move is illegal and tell them to select a move
 }
