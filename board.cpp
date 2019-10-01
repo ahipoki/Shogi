@@ -49,4 +49,36 @@ int board()
     board[7][1].setPiece(new Rook(2));
     //Rooks
   }
+  
+  void movePiece(Square from, Square to, int turn) throws Exception {
+    Piece fromPiece = from.getPiece();
+    
+    if (fromPiece.getOwner() == turn ) {//&& move is legal
+      
+    }
+  }
+  
+  public Square getSquare(int r, int c) {
+    return board[r][c];
+  }
+  
+  public Hand getHand(int i) {
+    return playerHands[i];
+  }
+  
+  public STring toString() {
+    String ret = "";
+    for (int r = 0; r < board.length; r++) {
+      for (int c = 0; c < board[r].length; c++) {
+        if (board[r][c].getPiece() == null) {
+          ret += " + ";
+        }
+        else {
+          ret += " " + board[r][c].getPiece().getSymbol() + " ";
+        }
+      }
+      ret += "\n";
+    }
+    return ret;
+  }
 }
