@@ -19,6 +19,34 @@ int board()
       board[2][i].setPiece(new Pawn(1));
       board[6][i].setPiece(new Pawn(2));
     }
-    board[
+    board[0][0].setPiece(new Lance(1));
+    board[0][8].setPiece(new Lance(1));
+    board[8][0].setPiece(new Lance(2));
+    board[8][8].setPiece(new Lance(2));
+    //Lances
+    board[0][1].setPiece(new Knight(1));
+    board[0][7].setPiece(new Knight(1));
+    board[8][1].setPiece(new Knight(2));
+    board[8][7].setPiece(new Knight(2));
+    //Knights
+    board[0][2].setPiece(new Silver(1));
+    board[0][6].setPiece(new Silver(1));
+    board[8][2].setPiece(new Silver(2));
+    board[8][6].setPiece(new Silver(2));
+    //Silvers
+    board[0][3].setPiece(new Gold(1));
+    board[0][5].setPiece(new Gold(1));
+    board[8][3].setPiece(new Gold(2));
+    board[8][5].setPiece(new Gold(2));
+    //Golds
+    board[0][4].setPiece(new King(1));
+    board[8][4].setPiece(new King(2));
+    //Kings
+    board[1][1].setPiece(new Bishop(1));
+    board[7][7].setPiece(new Bishop(2));
+    //Bishops
+    board[1][7].setPiece(new Rook(1));
+    board[7][1].setPiece(new Rook(2));
+    //Rooks
   }
 }
