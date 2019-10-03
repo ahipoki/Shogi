@@ -161,7 +161,12 @@ void Board::setBoard()
  for (int i = 0; i < 9; i++)
  {
   square[i][2].setPieceAndColor(PAWN, BLACK);
-  square[i][6]
+  square[i][6].setPieceAndColor(PAWN, WHITE);
+ }
+ 
+ for (int i = 2; i < 6; i++)
+ {
+  
  }
 }
 void shogi() {
