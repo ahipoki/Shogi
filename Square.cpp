@@ -8,24 +8,24 @@ void Square() {
   private int c;
   private Piece p;
   
-  public Square(int r, int c) {
+  void Square(int r, int c) {
     this.r = r;
     this.c = c;
   }
   
-  public int getR() {
+  int getR() {
     return r;
   }
   
-  public int getC() {
+  int getC() {
     return c;
   }
   
-  public Piece getPiece() {
+  Piece getPiece() {
     return p;
   }
   
-  public void setPiece(Piece p) {
+  void setPiece(Piece p) {
     this.p = p;
   }
 }
