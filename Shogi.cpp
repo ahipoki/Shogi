@@ -148,7 +148,21 @@ void Board::setBoard()
  Square[7][0].setPieceAndColor(KNIGHT, BLACK);
  Square[8][0].setPieceAndColor(LANCE, BLACK);
  
+ Square[0][9].setPieceAndColor(LANCE, WHITE);
+ Square[1][9].setPieceAndColor(KNIGHT, WHITE);
+ Square[2][9].setPieceAndColor(SILVER, WHITE);
+ Square[3][9].setPieceAndColor(GOLD, WHITE);
+ Square[4][9].setPieceAndColor(KING, WHITE);
+ Square[5][9].setPieceAndColor(GOLD, WHITE);
+ Square[6][9].setPieceAndColor(SILVER, WHITE);
+ Square[7][9].setPieceAndColor(KNIGHT, WHITE);
+ Square[8][9].setPieceAndColor(LANCE, WHITE);
  
+ for (int i = 0; i < 9; i++)
+ {
+  square[i][2].setPieceAndColor(PAWN, BLACK);
+  square[i][6]
+ }
 }
 void shogi() {
  int player1Wins = 0;
