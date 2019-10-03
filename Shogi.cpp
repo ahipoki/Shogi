@@ -1,20 +1,16 @@
-#include <iostream>
-#include <cstring>
+#include "chess.h"
 
-using namespace std;
-/*
- Finn McKinley
- 9/26/19
- A shogi program
-*/
-void showBoard(char board[] [SIDE]) {//Method to show the board
-  for (int r = 0; r < board.length(); r++) {//For the board's width
-    for (int c = 0; c < board[r].length(); c++) {//For the board's length
-      cout << board[r][c];
-    }
-  }
+Square::Square()
+{
+ piece = EMPTY;
+ color = NONE;
 }
 
+void Square::setSpace(Square* space)
+{
+ color = space->getColor();
+ piece = space->getPiece();
+}
 void shogi() {
  int player1Wins = 0;
  //Keeps track of player 1's wins
