@@ -8,9 +8,9 @@ using namespace std;
  9/26/19
  A shogi program
 */
-void showBoard(char board[] [SIDE]) {
-  for (int r = 0; r < board.length(); r++) {
-    for (int c = 0; c < board[r].length(); c++) {
+void showBoard(char board[] [SIDE]) {//Method to show the board
+  for (int r = 0; r < board.length(); r++) {//For the board's width
+    for (int c = 0; c < board[r].length(); c++) {//For the board's length
       cout << board[r][c];
     }
   }
@@ -22,7 +22,9 @@ void shogi() {
  int player2Wins = 0;
  //Keeps track of player 2's wins
  bool whiteMove = false;
+ //Doesn't start on white's move
  bool blackMove = true;
+ //Black moves first
 }
         
 int main() {
