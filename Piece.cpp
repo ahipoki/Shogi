@@ -4,47 +4,48 @@
 using namespace std;
 
 int Piece() {
-  private String type = "Empty";
-  private String symbol = "E";
-  protected int owner;
-  protected boolean promoted = false;
+  char type = "Empty";
+  //Tracks if a square is empty
+  char symbol = "E";
+  int owner;
+  bool promoted = false;
   
-  public Piece(int owner) {
+  void Piece(int owner) {
     this.owner = owner;
   }
   
-  public String getSymbol() {
+  void char getSymbol() {
     return symbol;
   }
   
-  public int getOwner() {
+  int getOwner() {
     return owner();
   }
   
-  public boolean canMove(Square from, Square to, board b) {
+  bool canMove(Square from, Square to, board b) {
     return false;
   }
   
-  public void setOwner(int owner) {
+  void setOwner(int owner) {
     this.owner = owner;
   }
   
-  public void setSymbol(String newSymbol) {
+  void setSymbol(char newSymbol) {
     this.symbol = newSymbol;
   }
   
-  public void setType(String newType) {
+  void setType(char newType) {
     this.type = newType;
   }
   
-  public void promote() {
+  void promote() {
     promoted = true;
     if (!symbol.substring(symbol.length() -1 ).equals("!")) {
-      symbol = symbol += "!";
+      symbol += "!";
     }
   }
   
-  public void demote() {
+  void demote() {
     promoted = false;
     Symbol = symbol.split("!")[0];
   }
