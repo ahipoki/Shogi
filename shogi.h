@@ -4,7 +4,7 @@
 #include <cmath>
 #include <string>
 
-enum Piece { KING, GOLD, SILVER, BISHOP, KNIGHT, LANCE, PAWN, EMPTY };
+enum Piece { KING, GOLD, SILVER, BISHOP, KNIGHT, LANCE, ROOK, PAWN, EMPTY };
 enum Color { WHITE, BLACK, NONE };
 
 class Square()
@@ -48,19 +48,25 @@ class Board()
   Color turn = BLACK;
   bool moveKing(Square* thisKing, Square* thatSpace);
   bool moveGold(Square* thisGold, Square* thatSpace);
+  bool moveSilver(Square* thisSilver, Square* thatSpace);
+  bool moveBishop(Square* thisBishop, Square* thatSpace);
+  bool moveKnight(Square* thisKnight, Square* thatSpace);
+  bool moveRook(Square* thisRook, Square* thatSpace);
+  bool moveLance(Square* thisLance, Square* thatSpace);
+  bool movePawn(Square* thisPawn, Square* thatSpace);
+  bool makeMove(int x1, int y1, int x2, int y2);
+  void printBoard();
+public:
+        Square* getSquare(int x, int y)
+        {
+          return &square[x][y];
+        }
+        void setSquare(Square * s, int x, int y)
+        {
+          square[x][y]=*s;
+        }
+        bool doMove();
   
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        void setBoard();
+        bool playGame();
+};
