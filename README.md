@@ -1,1 +1,1 @@
-A personal project. A way to play + practice shogi
+A personal project. Currently a 2 player game
